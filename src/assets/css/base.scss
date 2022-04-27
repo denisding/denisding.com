@@ -1,0 +1,36 @@
+$main-text-color: #333;
+$info-text-color: #999;
+$info-text-size: 0.8rem;
+
+html {
+    font-size: 14px;
+}
+
+.text-center {
+    text-align: center; 
+}
+
+.copyright {
+    font-size: $info-text-size;
+    color: $info-text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+    .copyright-inner { 
+        display: inline-block;
+        vertical-align: middle;
+
+        .info {
+            padding-bottom: 5px;
+        }
+        a {
+            color: $info-text-color;
+            text-decoration: none;
+        }
+    }
+}
